@@ -1,0 +1,26 @@
+// instalar projeto com basico de detalhes
+npm init -y
+
+// instala o express
+npm install express
+
+// instalar a tipagem do express, o tsc precisa dessa tipagem
+npm install @types/express -D
+
+// instalar o ts-node, para que ele o entenda
+npm install ts-node -D
+
+// instalar o tsc
+npm install typescript -D
+
+// criar o arquivo de inicialização do typescript
+npx tsc --init
+
+// pacote que observa o codigo e restarta quando tem alterações
+npm install ts-node-dev -D
+
+..
+
+// criando um projeto reactJS com template para tsc
+npx create-react-app web --template=typescript
+
