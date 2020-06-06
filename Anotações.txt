@@ -32,6 +32,16 @@ npm install knex
 // instalação do banco sqlite
 npm install sqlite3
 
+// cria a migrate linkando o arquivo de config do knex
+// esse comando depois vai nos cripts com o nome de "knex:migrate"
+npx knex --knexfile knexfile.ts migrate:latest
+
+// comando para executar as seeds, adicionar nos scripts com nome de "knex:seed"
+npx knex --knexfile knexfile.ts seed:run
+
+** se precisar que a aplicação ja inicie com cadastros no banco de dados, utiliza-se o SEEDS do KNEX.JS
+
+** serialização é o processo de transformar os dados de uma requisição para um novo formato mais acessivel para quem está as requisitando 
 ..
 
 // criando um projeto reactJS com template para tsc
