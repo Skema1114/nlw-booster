@@ -1,3 +1,6 @@
+==> BACKEND
+--> AULA 01
+
 // instalar projeto com basico de detalhes
 npm init -y
 
@@ -19,9 +22,15 @@ npx tsc --init
 // pacote que observa o codigo e restarta quando tem alterações
 npm install ts-node-dev -D
 
+--> AULA 02
+
 // no express é preciso informar o tipo de requisição que será recebida (tipo json)
 
+// instalação do knex para criação do banco de dados e padronização para que outros bancos aceitem as querys
+npm install knex
 
+// instalação do banco sqlite
+npm install sqlite3
 
 ..
 

@@ -1,8 +1,12 @@
 import express, { response, request } from 'express';
+import routes from './routes';
 
 const app = express();
 
 app.use(express.json());
+app.use(routes);
+
+app.listen(3333);
 
 // ROTA: endereço completo da requisição
 // RECURSO: qual entidade do sistema estamos acessando
@@ -15,51 +19,3 @@ app.use(express.json());
 // REQUEST PARAM: parâmetros que vem na própria rota que identificam um recurso
 // QUERY PARAM: parâmetro que vem na própria rota para filtros, paginações
 // REQUEST BODY: parâmetro para criação/atualização de informações
-
-const users = [
-  'Rafael',
-  'Josicleiderson',
-  'Matias',
-  'Diego'
-];
-
-app.get('/users', (request, response) => {
-  console.log('Listagem de usuarios');
-
-  const search = String(request.query.search);
-
-  const filteredUsers = search ? users.filter(user => user.includes(search)) : users;
-
-  console.log(search)
-
-  return response.json({
-    users: users,
-    filteredUsers: filteredUsers
-  });
-});
-
-app.get('/users/:id', (request, response) => {
-  const id = Number(request.params.id);
-
-  const user = users[id];
-
-  return response.json(user);
-})
-
-app.post('/users', (request, response) => {
-  const data = request.body;
-
-  console.log(data);
-
-  const user = {
-    name: 'Rafael',
-    email: 'rafael@rocketseat.com.br'
-  };
-
-  return response.json({
-    user: user,
-    data: data
-  });
-})
-
-app.listen(3333);
