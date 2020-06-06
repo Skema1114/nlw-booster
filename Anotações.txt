@@ -41,7 +41,24 @@ npx knex --knexfile knexfile.ts seed:run
 
 ** se precisar que a aplicação ja inicie com cadastros no banco de dados, utiliza-se o SEEDS do KNEX.JS
 
-** serialização é o processo de transformar os dados de uma requisição para um novo formato mais acessivel para quem está as requisitando 
+** SERIALIZAÇÃO (SERIALIZABLE [eu acho]) é o processo de transformar os dados de uma requisição para um novo formato mais acessivel para quem está as requisitando 
+
+## AULA 02: 1:30:30 como cdastrar dados com json envolvendo relacionamentos entre tabelas
+
+** TRANSACTION (padrao da comunidade => trx) do KNEX serve para quando precisa executar mais de uma query e uma depende da outra, ou seja, se falhar uma nao executa a outra
+
+** DESACOPLAMENTO é a abstração de código para mais arquivos, ou PATTERNS que é a estrutura de pastas
+
+** SPREED OPERATIONS pegar todas informações de um objeto e retornar dentro de outro objeto
+
+** CORS define quais urls web terão acesso a api
+// instalando cors
+npm install cors
+
+// instalando a typagem do cors, o typescript precisa disso
+npm install @types/cors -D
+
+
 ..
 
 // criando um projeto reactJS com template para tsc
