@@ -151,5 +151,12 @@ expo install react-native-maps
 // componente para conseguir colocar svgs dentro do projeto
 expo install react-native-svg
 
+** AULA 04: 1:23:13 utilização do SafeAreaView para manter os espaços de cima e de baixo
+
+// instalando o cliente http
+npm install axios
+
+// pacote para liberar a parte de geolocalização
+expo install expo-location
 
 
