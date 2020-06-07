@@ -1,4 +1,4 @@
-==> BACK-END
+==> BACK-END (SERVER)
 
 --> AULA 01
 
@@ -119,5 +119,37 @@ npm install axios
 --> AULA 04
 
 // instalar o expo global na maquina
-nom install -g expo-cli
+npm install -g expo-cli
+
+// criar o app mobile
+expo init mobile
+
+** YOGA a ferramenta que converte o objeto css do React native para a estilização
+  do android ou ios
+
+ ** FRAGMENT (ou fragmento) é tipo uma view que não cria elemento na dom, mas 
+  funciona como se fosse uma view
+
+  // instalando o expo fonts que lançou agr pouco e já adicionando as fontes
+    ubuntu e roboto pro app
+  expo install expo-font @expo-google-fonts/ubuntu @expo-google-fonts/roboto 
+
+## AULA 04: 33:33 improtando a biblioteca de appLoading do EXPO e utilizando
+
+// instalando a biblioteca de navegações
+npm install @react-navigation/native
+
+// do react navigation, da documentação
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+// mais pra frente o diego explica essa lib
+npm install @react-navigation/stack
+
+// instalando pacote de compatibilidade com mapas
+expo install react-native-maps
+
+// componente para conseguir colocar svgs dentro do projeto
+expo install react-native-svg
+
+
 
