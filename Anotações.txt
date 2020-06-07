@@ -1,4 +1,4 @@
-==> BACKEND
+==> BACK-END
 
 --> AULA 01
 
@@ -72,7 +72,7 @@ npm install @types/cors -D
 
 
 
-==> FRONT END (WEB)
+==> FRONT-END (WEB)
 
 --> AULA 01
 
@@ -112,4 +112,12 @@ npm install axios
 ** um GENERIC é um argumento de tipagem no typescript
 
 
+
+
+==> MOBILE
+
+--> AULA 04
+
+// instalar o expo global na maquina
+nom install -g expo-cli
 
